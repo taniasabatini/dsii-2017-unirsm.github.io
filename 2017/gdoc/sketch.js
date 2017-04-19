@@ -23,6 +23,7 @@ function setup() {
   loadJSON(url, gotSpreadsheet);
   //print("ciao");
   colorMode(HSB);
+  rectMode(CENTER);
 } // setup()
 
 function draw() {
@@ -32,7 +33,11 @@ function draw() {
   var padding = width/(dati.length+1);
   for (var i = 0; i < dati.length; i++) {
     fill(dati[i].hue,dati[i].saturation,dati[i].brightness,dati[i].alpha/100);
-    ellipse(padding + i * padding, height/2, padding*1.2,padding*1.2);
+    if (dati[i].forma == "quadrato") {
+      rect(padding + i * padding, height/2, padding*1.2,padding*1.2);
+    } else if (dati[i].forma == "cerchio") {
+      ellipse(padding + i * padding, height/2, padding*1.2,padding*1.2);
+    }
     noStroke();
     fill(255);
     textAlign(LEFT, CENTER);
@@ -50,7 +55,8 @@ function gotSpreadsheet(colori) {
                   "hue": colori.feed.entry[i].gsx$hue.$t,
                   "saturation": colori.feed.entry[i].gsx$saturation.$t,
                   "brightness": colori.feed.entry[i].gsx$brightness.$t,
-                  "alpha": colori.feed.entry[i].gsx$alpha.$t
+                  "alpha": colori.feed.entry[i].gsx$alpha.$t,
+                  "forma": colori.feed.entry[i].gsx$forma.$t
               }
               println(colore); // < debug, verifica oggetto 1x1
     dati.push(colore); // < inserimento nell'array del dato
