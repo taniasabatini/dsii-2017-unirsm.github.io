@@ -1,8 +1,8 @@
 # FLU-VIZ
 ** [launch / open](http://dsii-2017-unirsm.github.io/taniasabatini/flu)**
 
-by @taniasabatini © 2017 MIT License  
-DSII2017 Lab @UNIRSM [website](http://dsii-2017-unirsm.github.io)
+**by @taniasabatini © 2017 MIT License**  
+**DSII2017 Lab @UNIRSM** [**+**](http://dsii-2017-unirsm.github.io)
 
 Monitoraggio dell’andamento delle forme gravi e complicate di influenza in Italia, confermata dall'Istituto Superiore di Sanità, nel periodo compreso tra settembre 2016 e gennaio 2017.
 
