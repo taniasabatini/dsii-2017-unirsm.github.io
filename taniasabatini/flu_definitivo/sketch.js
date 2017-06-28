@@ -25,6 +25,9 @@ function draw() {
   // piccolo loop per verificare di avere i dati,
   // stampa su schermo cerchi con i colori presenti nel google doc
   background(0,0,255);
+
+  //CERCHI BLU
+ 
   var padding = width/(dati.length+1);
   for (var i = 0; i < dati.length; i++) {
     fill(dati[i].hue,dati[i].saturation,dati[i].brightness);
@@ -50,7 +53,7 @@ function draw() {
     text(dati[i].colore, 0,0);
     pop();
 
-//CERCHI BLU - casi gravi
+//CERCHI ROSSI
 
     fill(358,dati[i].decessi * 20,83, 100);
     var x_2 = padding + i * padding;
@@ -58,6 +61,7 @@ function draw() {
     var d_2 = sqrt(dati[i].decessi/PI)*(scala+random(2));
     ellipse(x_2, y_2, d_2, d_2);
 
+//MOUSEOVER CERCHI BLU
 
   if (
     // SINISTRA
@@ -82,7 +86,7 @@ function draw() {
     pop();
   }
 
-//CERCHI ROSSI - decessi
+//MOUSEOVER CERCHI ROSSI
 
     if (mouseX >= x_2 - d_2/2 && mouseX <= x_2 + d_2/2 && mouseY >= y_2 - d_2/2 && mouseY <= y_2 + d_2/2) {
       push();
