@@ -16,7 +16,6 @@ function setup() {
 
   // richiedi i dati in formato JSON e poi chiama la funzione gotSpreadsheet
   loadJSON(url, gotSpreadsheet);
-  //print("ciao");
   colorMode(HSB);
   rectMode(CENTER);
 } // setup()
