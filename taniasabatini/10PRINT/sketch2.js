@@ -1,10 +1,9 @@
-//https://www.youtube.com/watch?v=HyK_Q5rrcr4 part 1
-//https://www.youtube.com/watch?v=D8UgRyRnvXU part 2
-//https://www.youtube.com/watch?v=8Ju_uxJ9v44 part 3
-// https://www.youtube.com/watch?v=_p5IH0L63wo part 4
+// 10PRINT - PACMAN by taniasabatini - Tania Sabatini
+// 2017 © taniasabatini, Daniele @fupete and the course DSII2017 @UniRSM
+// github.com/fupete — github.com/dsii-2017-unirsm
+// Educational purposes, MIT License, 2017, San Marino
 
-// https://github.com/CodingTrain/Rainbow-Code/tree/master/CodingChallenges/CC_10_Maze_DFS_p5.js
-
+// Credits to Daniel Shiffman / Original code inspired on https://github.com/CodingTrain/Rainbow-Code/tree/master/CodingChallenges/CC_10_Maze_DFS_p5.js
 
 
 var cols, rows;
